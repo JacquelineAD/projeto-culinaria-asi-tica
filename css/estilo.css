@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:ital,wght@0,100;0,300;1,700&family=Skranji&display=swap');
+
+:root{
+    --font-titulo: 'Skranji', cursive;
+    --font-padrao: 'Lato', sans-serif;
+    --font-destaque:'DM Serif Display', serif;
+    
+
+    --cor1:#ffffff;
+    --cor2:#000000;
+    --corsombra:rgba(0, 0, 0, 0.384);
+    --corrgbablur: rgba(255, 255, 255, .1);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: var(--font-padrao);
+
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 30px 5%;
+   background: transparent;
+   display: flex;
+   align-items: center;
+   z-index: 100;
+
+}
+
+.logo{
+    font-family: var(--font-titulo);
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.social-media{
+    color: var(--cor1);
+    margin: 0 auto 0 50px;
+
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--cor1);
+    border-radius: 7px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.social-media a:hover{
+    background: var(--cor1);
+}
+
+.social-media a i{
+    font-size: 20px;
+    color: var(--cor1);
+    transition: 0.5s;
+
+}
+
+.social-media a:hover i{
+    color: var(--corsombra);
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: 0.5s;
+    text-shadow: 0 0 10px var(--corsombra);
+
+
+}
+
+.navbar a:hover{
+    font-size: 20px;
+    background: var(--cor1);
+    border-radius: 7px;
+    padding: 3px;
+    color: var(--corsombra);
+    transition: 0.5s;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+}
+
+.slider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.slide .left-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.left-info .penetrate-blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--corrgbablur);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.penetrate-blur h1{
+    font-size: 250px;
+    font-family: var(--font-destaque);
+    color: var(--cor1);
+
+}
+
+.left-info .content{
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    color: var(--cor1);
+
+}
+
+.content h3{
+    font-family: var(--font-titulo);
+    font-size: 24px;
+    
+}
+
+.content p{
+    font-size: 18px;
+    margin: 10px 0 15px;
+}
+
+.content .btn{
+    display: inline-block;
+    padding: 13px 28px;
+    background: transparent;
+    border: 2px solid var(--cor1);
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor1);
+    box-shadow: 0 0 10px var(--corsombra);
+    transition: 0.5s;
+}
+
+.content .btn:hover{
+    background: var(--cor1);
+    color: var(--corsombra);
+    text-shadow: 0 0 10px var(--corsombra);  
+}
+
+.slide .right-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.right-info h1{
+    font-family: var(--font-destaque);
+    font-size: 250px;
+    color: var(--cor1);
+    margin-left: 1px;
+    
+}
+
+.right-info h3{
+    position: absolute;
+    font-family: var(--font-destaque);
+    font-size: 70px;
+    color: var(--cor1);
+    text-shadow: 0 0 10px var(--corrgbablur);
+    transform: translateY(150%);
+    margin-left: 13px;
+    
+}
